@@ -27,7 +27,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "electron-packager ./ --all --arch=x64",
+    "build": "electron-packager ./ --platform=linux --arch=x64",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
