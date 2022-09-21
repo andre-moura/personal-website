@@ -24,7 +24,7 @@ Download the libraries and dependencies
 npm i
 ```
 
-Run the app in the development mode
+Run the application in the development mode
 ```bash
 npm start
 ```
