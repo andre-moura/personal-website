@@ -49,55 +49,55 @@ export const Skills = () => {
                         <p>Languages and tools that I learned.</p>
                         <Carousel responsive={responsive} infinite={true} className="owl-carousel owl-theme skill-slider">
                             <div className="item">
-                                <img src={htmlIcon} style={skills} alt="" />
+                                <img src={htmlIcon} style={skills} alt="HTML Icon" />
                                 <h5>HTML</h5>
                             </div>
                             <div className="item">
-                                <img src={cssIcon} style={skills} alt="" />
+                                <img src={cssIcon} style={skills} alt="CSS Icon" />
                                 <h5>CSS</h5>
                             </div>
                             <div className="item">
-                                <img src={jsIcon} style={skills} alt="" />
+                                <img src={jsIcon} style={skills} alt="Javascript Icon" />
                                 <h5>Javascript</h5>
                             </div>
                             <div className="item">
-                                <img src={nodeIcon} style={skills} alt="" />
+                                <img src={nodeIcon} style={skills} alt="Node JS Icon" />
                                 <h5>Node JS</h5>
                             </div>
                             <div className="item">
-                                <img src={reactIcon} style={skills} alt="" />
+                                <img src={reactIcon} style={skills} alt="React JS Icon" />
                                 <h5>React JS</h5>
                             </div>
                             <div className="item">
-                                <img src={javaIcon} style={skills} alt="" />
+                                <img src={javaIcon} style={skills} alt="Java Icon" />
                                 <h5>Java</h5>
                             </div>
                             <div className="item">
-                                <img src={csharpIcon} style={skills} alt="" />
+                                <img src={csharpIcon} style={skills} alt="C Sharp Icon" />
                                 <h5>C#</h5>
                             </div>
                             <div className="item">
-                                <img src={rIcon} style={skills} alt="" />
+                                <img src={rIcon} style={skills} alt="R Language Icon" />
                                 <h5>R Language</h5>
                             </div>
                             <div className="item">
-                                <img src={pythonIcon} style={skills} alt="" />
+                                <img src={pythonIcon} style={skills} alt="Python Icon" />
                                 <h5>Python</h5>
                             </div>
                             <div className="item">
-                                <img src={springIcon} style={skills} alt="" />
+                                <img src={springIcon} style={skills} alt="Spring Boot Icon" />
                                 <h5>Spring Boot</h5>
                             </div>
                             <div className="item">
-                                <img src={cloudIcon} style={skills} alt="" />
+                                <img src={cloudIcon} style={skills} alt="Cloud Formation Icon" />
                                 <h5>Cloud Formation</h5>
                             </div>
                             <div className="item">
-                                <img src={sqlIcon} style={skills} alt="" />
+                                <img src={sqlIcon} style={skills} alt="SQL Icon" />
                                 <h5>SQL</h5>
                             </div>
                             <div className="item">
-                                <img src={gitIcon} style={skills} alt="" />
+                                <img src={gitIcon} style={skills} alt="Git Icon" />
                                 <h5>Git</h5>
                             </div>
                         </Carousel>
