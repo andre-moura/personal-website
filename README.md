@@ -1,9 +1,9 @@
 <img src="https://img.shields.io/badge/Node-v18.8.0-green"/> <img src="https://img.shields.io/badge/Javascript-ES6-yellow"/> <img src="https://img.shields.io/badge/React-v18.2.0-blue"/> <img src="https://img.shields.io/badge/React--Bootstrap-v2.5.0-blueviolet"/> <img src="https://img.shields.io/badge/HTML-5-orange"/> <img src="https://img.shields.io/badge/CSS-3-purple"/> 
 
 # Personal Portfolio Website
-## My goal in creating this website was to put my knowledge into practice.
+My goal in creating this website was to put my knowledge into practice.
 
-Built using:
+## Built using:
 
 - Node
 - Javascript
