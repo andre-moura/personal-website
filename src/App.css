@@ -555,6 +555,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 /************ Footer Css ************/
 .footer {
   padding: 0 0 50px 0;
+  background-image: url('./assets/img/background-footer.png');
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
