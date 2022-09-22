@@ -2,6 +2,7 @@
 
 # Personal Portfolio Website
 My goal in creating this website was to put my knowledge into practice.
+<img src="https://raw.githubusercontent.com/andre-moura/andre-moura-website/master/src/assets/img/index.png"/>
 
 ## Built using:
 
