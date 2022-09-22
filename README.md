@@ -3,6 +3,7 @@
 # Personal Portfolio Website
 My goal in creating this website was to put my knowledge into practice.
 <img src="https://raw.githubusercontent.com/andre-moura/andre-moura-website/master/src/assets/img/index-html.png"/>
+Open the [URL](https://andre-moura.github.io/andre-moura-website/) to view the published version.
 
 ## Built using:
 
@@ -30,5 +31,3 @@ Run the application in the development mode
 npm start
 ```
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-Open the [website](https://andre-moura.github.io/andre-moura-website/) to view the published version.
