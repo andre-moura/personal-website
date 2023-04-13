@@ -22,6 +22,15 @@
   box-sizing: border-box;
 }
 
+html, body {
+  height: 100vh;
+  margin: 0;
+}
+
+section {
+  height: 100vh;
+}
+
 html {
   scroll-behavior: smooth;
   scroll-padding-top: 75px;
@@ -237,11 +246,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .banner {
   margin-top: 0;
   padding: 260px 0 100px 0;
-  background-image: linear-gradient(
-    rgba(0, 0, 0, 0.2), 
-    rgba(0, 0, 0, 0.2)
-  ), url('./assets/img/floating-city.jpg');
-  
+  background: linear-gradient(to bottom, #1c2e4a, #1269db);
   background-position: top center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -276,7 +281,6 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   display: block;
 }
 .banner p {
-  color: #B8B8B8;
   font-size: 18px;
   letter-spacing: 0.8px;
   line-height: 1.5em;
@@ -314,21 +318,26 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
         transform: translateY(-20px);
     }
 }
+
+.title-banner {
+  min-height: 130px;
+}
 .txt-rotate > .wrap {
   border-right: 0.08em solid #666;
 }
 
 /************ Skills Css ************/
 .skill {
-  padding: 0 0 50px 0;
+  display: flex;
+  align-items: center;
+  padding: 50px;
   position: relative;
 }
 .skill-bx {
   background: #151515;
   border-radius: 64px;
   text-align: center;
-  padding: 60px 50px;
-  margin-top: -60px;
+  padding: 50px;
 }
 .skill h2 {
 	font-size: 45px;
@@ -554,8 +563,8 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 /************ Footer Css ************/
 .footer {
-  padding: 0 0 50px 0;
-  background-image: url('./assets/img/background-footer.png');
+  display: flex;
+  align-items: center;
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;

@@ -34,7 +34,7 @@ export const NavBar = () => {
       <Navbar expand="md" className={scrolled ? "scrolled" : ""}>
         <Container>
           <Navbar.Brand href="/">
-            <div className="logo">Personal Website</div>
+            <div className="logo">Andre Moura</div>
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav">
             <span className="navbar-toggler-icon"></span>
@@ -48,7 +48,7 @@ export const NavBar = () => {
             </Nav>
             <span className="navbar-text">
               <div className="social-icon">
-                <a href="https://www.linkedin.com/in/andr%C3%A9-moura-815a9a1a7/" target="_blank"><img src={navIcon1} alt="" /></a>
+                <a href="https://www.linkedin.com/in/andre-moura-tech/" target="_blank" rel="noreferrer"><img src={navIcon1} alt="" /></a>
               </div>
               <HashLink to='#connect'>
                 <button className="vvd"><span>Let’s Connect</span></button>
