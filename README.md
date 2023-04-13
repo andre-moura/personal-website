@@ -17,7 +17,7 @@ My goal in creating this website was to put my knowledge into practice. Open the
 
 Clone the repository
 ```bash
-git clone https://github.com/andre-moura/andre-moura-website.git
+git clone https://github.com/andre-moura/personal-website.git
 ```
 
 Download the libraries and dependencies
