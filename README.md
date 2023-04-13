@@ -2,7 +2,7 @@
 
 # Personal Portfolio Website
 My goal in creating this website was to put my knowledge into practice. Open the [URL](https://andre-moura.github.io/andre-moura-website/) to view the published version.
-<img src="https://raw.githubusercontent.com/andre-moura/andre-moura-website/master/src/assets/img/index-html.png"/>
+<img src="https://raw.githubusercontent.com/andre-moura/websites-created/master/src/assets/img/index-html.png?token=GHSAT0AAAAAAB62H3MENB67BYMHN4DRI75QZBYP4IA"/>
 
 ## Built using:
 
