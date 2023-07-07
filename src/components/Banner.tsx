@@ -1,9 +1,8 @@
 import { useState, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import headerImg from "../assets/img/cursor.png";
 import { ArrowRightCircle } from 'react-bootstrap-icons';
-import 'animate.css';
 import TrackVisibility from 'react-on-screen';
+import headerImg from "../assets/images/cursor.png";
 
 export const Banner = () => {
   const [loopNum, setLoopNum] = useState(0);
@@ -21,10 +20,6 @@ export const Banner = () => {
 
     return () => { clearInterval(ticker) };
   }, [text])
-
-  const styleImg = {
-    width: '60%',
-  }
 
   const tick = () => {
     let i = loopNum % toRotate.length;
@@ -60,7 +55,7 @@ export const Banner = () => {
               {({ isVisible }) =>
               <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
                 <span className="tagline">Welcome to my Portfolio</span>
-                <h1 className='title-banner'>{`Hi! I'm André`} <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Web Developer", "Web Designer", "UI/UX Designer" ]'><span className="wrap">{text}</span></span></h1>
+                <h1 className='title-banner'>{`Hi! I'm André`} <span className="txt-rotate" /* dataPeriod="1000" */ data-rotate='[ "Web Developer", "Web Designer", "UI/UX Designer" ]'><span className="wrap">{text}</span></span></h1>
                   <p>I am a computer science student. I find coding a lot of fun, I'm curious and I always enjoy learning and experimenting with new technologies.</p>
                   <button >Let’s Connect <ArrowRightCircle size={25} /></button>
               </div>}
@@ -70,7 +65,7 @@ export const Banner = () => {
             <TrackVisibility>
               {({ isVisible }) =>
                 <div className={isVisible ? "animate__animated animate__zoomIn" : ""}>
-                  <img src={headerImg} alt="Header Img" style={styleImg} />
+                  <img src={headerImg} alt="Header Img" className='header-img' />
                 </div>}
             </TrackVisibility>
           </Col>

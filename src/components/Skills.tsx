@@ -1,18 +1,18 @@
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
-import javaIcon from "../assets/img/java.png";
-import csharpIcon from "../assets/img/C-sharp.png";
-import springIcon from "../assets/img/springboot.png";
-import pythonIcon from "../assets/img/python.png";
-import htmlIcon from "../assets/img/html.png";
-import cssIcon from "../assets/img/css.png";
-import jsIcon from "../assets/img/javascript.png";
-import reactIcon from "../assets/img/react.png";
-import nodeIcon from "../assets/img/nodejs.png";
-import cloudIcon from "../assets/img/aws-cloud-formation.png";
-import rIcon from "../assets/img/r-language.png";
-import sqlIcon from "../assets/img/sql.png";
-import gitIcon from "../assets/img/git.png";
+import javaIcon from "../assets/images/java.png";
+import csharpIcon from "../assets/images/C-sharp.png";
+import springIcon from "../assets/images/springboot.png";
+import pythonIcon from "../assets/images/python.png";
+import htmlIcon from "../assets/images/html.png";
+import cssIcon from "../assets/images/css.png";
+import jsIcon from "../assets/images/javascript.png";
+import reactIcon from "../assets/images/react.png";
+import nodeIcon from "../assets/images/nodejs.png";
+import cloudIcon from "../assets/images/aws-cloud-formation.png";
+import rIcon from "../assets/images/r-language.png";
+import sqlIcon from "../assets/images/sql.png";
+import gitIcon from "../assets/images/git.png";
 
 export const Skills = () => {
   const responsive = {
@@ -35,10 +35,6 @@ export const Skills = () => {
     }
   };
 
-  const skills = {
-    width: "50%",
-  }
-
   return (
     <section className="skill" id="skills">
         <div className="container">
@@ -49,55 +45,55 @@ export const Skills = () => {
                         <p>Languages and tools that I learned.</p>
                         <Carousel responsive={responsive} infinite={true} className="owl-carousel owl-theme skill-slider">
                             <div className="item">
-                                <img src={htmlIcon} style={skills} alt="HTML Icon" />
+                                <img src={htmlIcon} className='skills' alt="HTML Icon" />
                                 <h5>HTML</h5>
                             </div>
                             <div className="item">
-                                <img src={cssIcon} style={skills} alt="CSS Icon" />
+                                <img src={cssIcon} className='skills' alt="CSS Icon" />
                                 <h5>CSS</h5>
                             </div>
                             <div className="item">
-                                <img src={jsIcon} style={skills} alt="Javascript Icon" />
+                                <img src={jsIcon} className='skills' alt="Javascript Icon" />
                                 <h5>Javascript</h5>
                             </div>
                             <div className="item">
-                                <img src={nodeIcon} style={skills} alt="Node JS Icon" />
+                                <img src={nodeIcon} className='skills' alt="Node JS Icon" />
                                 <h5>Node JS</h5>
                             </div>
                             <div className="item">
-                                <img src={reactIcon} style={skills} alt="React JS Icon" />
+                                <img src={reactIcon} className='skills' alt="React JS Icon" />
                                 <h5>React JS</h5>
                             </div>
                             <div className="item">
-                                <img src={javaIcon} style={skills} alt="Java Icon" />
+                                <img src={javaIcon} className='skills' alt="Java Icon" />
                                 <h5>Java</h5>
                             </div>
                             <div className="item">
-                                <img src={csharpIcon} style={skills} alt="C Sharp Icon" />
+                                <img src={csharpIcon} className='skills' alt="C Sharp Icon" />
                                 <h5>C#</h5>
                             </div>
                             <div className="item">
-                                <img src={rIcon} style={skills} alt="R Language Icon" />
+                                <img src={rIcon} className='skills' alt="R Language Icon" />
                                 <h5>R Language</h5>
                             </div>
                             <div className="item">
-                                <img src={pythonIcon} style={skills} alt="Python Icon" />
+                                <img src={pythonIcon} className='skills' alt="Python Icon" />
                                 <h5>Python</h5>
                             </div>
                             <div className="item">
-                                <img src={springIcon} style={skills} alt="Spring Boot Icon" />
+                                <img src={springIcon} className='skills' alt="Spring Boot Icon" />
                                 <h5>Spring Boot</h5>
                             </div>
                             <div className="item">
-                                <img src={cloudIcon} style={skills} alt="Cloud Formation Icon" />
+                                <img src={cloudIcon} className='skills' alt="Cloud Formation Icon" />
                                 <h5>Cloud Formation</h5>
                             </div>
                             <div className="item">
-                                <img src={sqlIcon} style={skills} alt="SQL Icon" />
+                                <img src={sqlIcon} className='skills' alt="SQL Icon" />
                                 <h5>SQL</h5>
                             </div>
                             <div className="item">
-                                <img src={gitIcon} style={skills} alt="Git Icon" />
+                                <img src={gitIcon} className='skills' alt="Git Icon" />
                                 <h5>Git</h5>
                             </div>
                         </Carousel>
