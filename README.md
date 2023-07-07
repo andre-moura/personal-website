@@ -2,7 +2,7 @@
 
 # Personal Website
 My goal in creating this website was to put my knowledge into practice. Open the [URL](https://andre-moura.github.io/andre-moura-website/) to view the published version.
-<img src="https://github.com/andre-moura/websites-created/blob/master/src/assets/img/home.png?raw=true"/>
+<img src="https://github.com/andre-moura/images/blob/main/personal-website.png?raw=true"/>
 
 ## How to get started
 
