@@ -110,6 +110,7 @@ nav.navbar {
 nav.navbar.scrolled {
   padding: 0px 0;
   background-color: #121212;
+  border-bottom: 1px solid #272b30;
 }
 
 nav.navbar a.navbar-brand {
@@ -382,6 +383,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 .skill h2 {
+  text-align: center;
   font-size: 45px;
   font-weight: 700;
 }
@@ -637,11 +639,13 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 /************ Footer Css ************/
 .footer {
+  margin-top: 20px;
+  padding: 20px 0 0 0;
   display: flex;
   align-items: center;
   background-position: center center;
   background-size: cover;
-  background-repeat: no-repeat;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .newsletter-bx {
@@ -729,4 +733,71 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 .header-img {
   width: 60%;
+}
+
+/* Project */
+.projects {
+  height: 90vh;
+  padding: 0px 50px 0px 50px;
+  border-top: 1px solid #272b30;
+}
+
+.projects h2 {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.projects .card {
+  background-color: #343a40;
+  border-color: #343a40;
+  margin-bottom: 15px;
+}
+
+.projects .card-img-top {
+  height: 200px;
+  object-fit: cover;
+}
+
+.projects .card-title {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.projects .card-text {
+  color: #adb5bd;
+  margin-bottom: 15px;
+}
+
+.projects .card-footer {
+  background-color: #272b30;
+  border-top: none;
+  color: #adb5bd;
+  padding: 10px;
+}
+
+.projects .btn-primary {
+  background-color: #0366d6;
+  border-color: #0366d6;
+  font-size: 14px;
+  padding: 6px 12px;
+}
+
+a.project-link {
+  text-align: center;
+  text-decoration: none;
+  color: var(--gray);
+  border-radius: 5px;
+  width: 100%;
+  background-color: #272b30;
+  border-top: none;
+  color: #adb5bd;
+  padding: 10px;
+  border: 1px solid #272b30;
+}
+
+a.project-link:hover {
+  text-decoration: none;
+  color: #ccc9c9;
+  border: 1px solid #ccc9c9;
 }

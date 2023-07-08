@@ -1,16 +1,14 @@
 import React from 'react';
-import { NavBar } from '../components/NavBar';
 import { Banner } from '../components/Banner'
 import { Skills } from '../components/Skills'
-import { Footer } from '../components/Footer'
+import Projects from '../components/Projects';
 
 const HomePage: React.FC = () => {
     return (
         <>
-            <NavBar />
             <Banner />
             <Skills />
-            <Footer />
+            <Projects />
         </>
     );
 };
