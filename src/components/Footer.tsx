@@ -1,5 +1,6 @@
 import { Container, Row, Col } from "react-bootstrap";
-import navIcon1 from "../assets/images/nav-icon1.svg";
+import LinkedInIcon from "../assets/images/linkedin-icon.svg";
+import GitHubIcon from '../assets/images/github-icon.svg';
 
 export const Footer = () => {
   return (
@@ -19,9 +20,11 @@ export const Footer = () => {
             </div>
           </Col>
           <Col size={12} sm={6} className="text-center text-sm-end">
-            <div className="social-icon">
-              <a href="https://www.linkedin.com/in/andre-moura-tech/" target="_blank"><img src={navIcon1} alt="Icon" /></a>
-            </div>
+              <div className="social-icon">
+                <a href="https://github.com/andre-moura" target="_blank" rel="noreferrer"><img src={GitHubIcon} alt="" /></a>
+                &nbsp;
+                <a href="https://www.linkedin.com/in/andre-moura-tech/" target="_blank" rel="noreferrer"><img src={LinkedInIcon} alt="" /></a>
+              </div>
             <p>Copyright 2022. All Rights Reserved</p>
           </Col>
         </Row>
