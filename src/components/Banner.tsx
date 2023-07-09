@@ -9,8 +9,7 @@ export const Banner = () => {
   const [isDeleting, setIsDeleting] = useState(false);
   const [text, setText] = useState('');
   const [delta, setDelta] = useState(300 - Math.random() * 100);
-  const [index, setIndex] = useState(1);
-  const toRotate = [ "a Web Developer", "a Desktop Developer", "an UI/UX Designer" ];
+  const toRotate = ["a Web Developer", "a Desktop Developer", "an UI/UX Designer"];
   const period = 2000;
 
   useEffect(() => {
@@ -34,15 +33,12 @@ export const Banner = () => {
 
     if (!isDeleting && updatedText === fullText) {
       setIsDeleting(true);
-      setIndex(prevIndex => prevIndex - 1);
+      setLoopNum(loopNum + 1);
       setDelta(period);
     } else if (isDeleting && updatedText === '') {
       setIsDeleting(false);
       setLoopNum(loopNum + 1);
-      setIndex(1);
       setDelta(500);
-    } else {
-      setIndex(prevIndex => prevIndex + 1);
     }
   }
 
@@ -53,12 +49,12 @@ export const Banner = () => {
           <Col xs={12} md={6} xl={7}>
             <TrackVisibility>
               {({ isVisible }) =>
-              <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
-                <span className="tagline">Welcome to my Portfolio</span>
-                <h1 className='title-banner'>{`Hi! I'm André`} <span className="txt-rotate" /* dataPeriod="1000" */ data-rotate='[ "Web Developer", "Web Designer", "UI/UX Designer" ]'><span className="wrap">{text}</span></span></h1>
+                <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
+                  <span className="tagline">Welcome to my Portfolio</span>
+                  <h1 className='title-banner'>{`Hi! I'm André`} <span className="txt-rotate" /* dataPeriod="1000" */ data-rotate='[ "Web Developer", "Web Designer", "UI/UX Designer" ]'><span className="wrap">{text}</span></span></h1>
                   <p>I am a computer science student. I find coding a lot of fun, I'm curious and I always enjoy learning and experimenting with new technologies.</p>
                   <button >Let’s Connect <ArrowRightCircle size={25} /></button>
-              </div>}
+                </div>}
             </TrackVisibility>
           </Col>
           <Col xs={12} md={6} xl={5}>
