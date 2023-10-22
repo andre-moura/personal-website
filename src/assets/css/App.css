@@ -279,6 +279,9 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   background-position: top center;
   background-size: cover;
   background-repeat: no-repeat;
+  display: flex;
+  align-content: center;
+  align-items: center;
 }
 
 .logo {
@@ -740,6 +743,13 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   height: 90vh;
   padding: 0px 50px 0px 50px;
   border-top: 1px solid #272b30;
+}
+
+.project-container {
+  display: flex;
+  align-content: center;
+  align-items: center;
+  height: 90vh;
 }
 
 .projects h2 {
