@@ -13,6 +13,20 @@ interface Project {
   forks: number;
 }
 
+// Define the type for the data returned by the GitHub API
+interface GitHubRepo {
+  name: string;
+  html_url: string;
+  description: string;
+  owner: {
+    login: string;
+    avatar_url: string;
+  };
+  language: string;
+  stargazers_count: string;
+  forks_count: number;
+}
+
 const Projects: React.FC = () => {
   const [projects, setProjects] = useState<Project[]>([]);
   const [error, setError] = useState<string | null>(null);
@@ -20,12 +34,25 @@ const Projects: React.FC = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get("https://gh-pinned-repos.egoist.dev", {
-          params: {
-            username: "andre-moura",
-          },
+        const response = await axios.get<GitHubRepo[]>("https://api.github.com/users/andre-moura/repos", {
+          headers: {
+            Authorization: `token ${process.env.REACT_APP_GITHUB_TOKEN}`
+          }
         });
-        setProjects(response.data);
+
+        // Process the data to fit your Project interface
+        const pinnedProjects = response.data.map((repo: GitHubRepo) => ({
+          owner: repo.owner.login,
+          repo: repo.name,
+          link: repo.html_url,
+          description: repo.description,
+          image: repo.owner.avatar_url,
+          language: repo.language,
+          stars: repo.stargazers_count,
+          forks: repo.forks_count
+        }));
+
+        setProjects(pinnedProjects);
       } catch (error) {
         console.error("Error fetching GitHub projects:", error);
         setError("Failed to fetch projects. Please try again later.");
