@@ -437,12 +437,17 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   width: 72%;
   margin: 0 auto;
   border-radius: 50px;
-  background-color: rgb(255 255 255 / 10%);
+  background-color: #ffffff1a;
   overflow: hidden;
 }
 
 .project .nav.nav-pills .nav-item {
-  width: 33.33333%;
+  width: 25%;
+}
+
+.card-box {
+  width: 25.33333333%;
+  padding: 0 20px;
 }
 
 .project .nav.nav-pills .nav-link {
@@ -752,6 +757,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   height: 90vh;
   width: 100%;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 .projects h2 {
@@ -800,7 +806,7 @@ a.project-link {
   text-decoration: none;
   color: var(--gray);
   border-radius: 5px;
-  width: 100%;
+  min-width: 200px;
   background-color: #272b30;
   border-top: none;
   color: #adb5bd;
