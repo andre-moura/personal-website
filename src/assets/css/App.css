@@ -750,6 +750,8 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   align-content: center;
   align-items: center;
   height: 90vh;
+  width: 100%;
+  justify-content: center;
 }
 
 .projects h2 {
