@@ -43,30 +43,32 @@ export const Banner = () => {
   }
 
   return (
-    <section className="banner" id="home">
-      <Container>
-        <Row className="aligh-items-center">
-          <Col xs={12} md={6} xl={7}>
-            <TrackVisibility>
-              {({ isVisible }) =>
-                <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
-                  <span className="tagline">Welcome to my Portfolio</span>
-                  <h1 className='title-banner'>{`Hi! I'm Andre`} <span className="txt-rotate" /* dataPeriod="1000" */ data-rotate='[ "Web Developer", "Web Designer", "UI/UX Designer" ]'><span className="wrap">{text}</span></span></h1>
-                  <p>I am a computer science student. I find coding a lot of fun, I'm curious and I always enjoy learning and experimenting with new technologies.</p>
-                  <button >Let’s Connect <ArrowRightCircle size={25} /></button>
-                </div>}
-            </TrackVisibility>
-          </Col>
-          <Col xs={12} md={6} xl={5}>
-            <TrackVisibility>
-              {({ isVisible }) =>
-                <div className={isVisible ? "animate__animated animate__zoomIn" : ""}>
-                  <img src={headerImg} alt="Header Img" className='header-img' />
-                </div>}
-            </TrackVisibility>
-          </Col>
-        </Row>
-      </Container>
-    </section>
+      <section className="banner" id="home">
+        <Container>
+          <Row className="aligh-items-center">
+            <Col xs={12} md={6} xl={7}>
+              <TrackVisibility>
+                {({ isVisible }) =>
+                  <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
+                    <span className="tagline">Welcome to my Portfolio</span>
+                    <h1 className='title-banner'>{`Hi! I'm Andre`} <span className="txt-rotate" /* dataPeriod="1000" */ data-rotate='[ "Web Developer", "Web Designer", "UI/UX Designer" ]'><span className="wrap">{text}</span></span></h1>
+                    <p>I am a computer science student. I find coding a lot of fun, I'm curious and I always enjoy learning and experimenting with new technologies.</p>
+                    <a href='https://www.linkedin.com/in/andre-moura-tech' target="_blank">
+                      <button>Let’s Connect <ArrowRightCircle size={25} /></button>
+                    </a>
+                  </div>}
+              </TrackVisibility>
+            </Col>
+            <Col xs={12} md={6} xl={5}>
+              <TrackVisibility>
+                {({ isVisible }) =>
+                  <div className={isVisible ? "animate__animated animate__zoomIn" : ""}>
+                    <img src={headerImg} alt="Header Img" className='header-img' />
+                  </div>}
+              </TrackVisibility>
+            </Col>
+          </Row>
+        </Container>
+      </section>
   )
 }

@@ -2,7 +2,6 @@ import { useState, useEffect } from "react";
 import { Navbar, Nav, Container } from "react-bootstrap";
 import LinkedInIcon from '../assets/images/linkedin-icon.svg';
 import GitHubIcon from '../assets/images/github-icon.svg';
-import { HashLink } from 'react-router-hash-link';
 import {
   BrowserRouter as Router
 } from "react-router-dom";
@@ -63,9 +62,9 @@ export const NavBar = () => {
                 &nbsp;
                 <a href="https://www.linkedin.com/in/andre-moura-tech/" target="_blank" rel="noreferrer"><img src={LinkedInIcon} alt="" /></a>
               </div>
-              <HashLink to='#connect'>
+              <a href='https://www.linkedin.com/in/andre-moura-tech' target="_blank">
                 <button className="vvd"><span>Let’s Connect</span></button>
-              </HashLink>
+              </a>
             </span>
           </Navbar.Collapse>
         </Container>
