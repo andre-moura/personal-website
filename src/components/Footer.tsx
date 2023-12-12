@@ -3,6 +3,8 @@ import LinkedInIcon from "../assets/images/linkedin-icon.svg";
 import GitHubIcon from '../assets/images/github-icon.svg';
 
 export const Footer = () => {
+  const currentYear = new Date().getFullYear();
+
   return (
     <footer className="footer">
       <Container>
@@ -25,7 +27,7 @@ export const Footer = () => {
                 &nbsp;
                 <a href="https://www.linkedin.com/in/andre-moura-tech/" target="_blank" rel="noreferrer"><img src={LinkedInIcon} alt="" /></a>
               </div>
-            <p>Copyright 2022. All Rights Reserved</p>
+            <p>Copyright {currentYear}. All Rights Reserved</p>
           </Col>
         </Row>
       </Container>

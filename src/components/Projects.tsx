@@ -27,11 +27,11 @@ interface GitHubRepo {
   forks_count: number;
 }
 
-
 const Projects: React.FC = () => {
   const [projects, setProjects] = useState<Project[]>([]);
   const [error, setError] = useState<string | null>(null);
   const apiKey: string = (import.meta.env.VITE_GITHUB_TOKEN as string);
+  const pinnedRepos = ["jwt", "pomodoro", "login-google-auth", "color-picker-extension", "personal-website", "weather-app"];
 
   useEffect(() => {
     const fetchData = async () => {
@@ -41,26 +41,29 @@ const Projects: React.FC = () => {
             Authorization: `token ${apiKey}`
           }
         });
-
-        // Process the data to fit your Project interface
-        const pinnedProjects = response.data.map((repo: GitHubRepo) => ({
-          owner: repo.owner.login,
-          repo: repo.name,
-          link: repo.html_url,
-          description: repo.description,
-          image: repo.owner.avatar_url,
-          language: repo.language,
-          stars: repo.stargazers_count,
-          forks: repo.forks_count
-        }));
-
-        setProjects(pinnedProjects);
+  
+        // Correctly map the GitHubRepo objects to Project interface
+        const filteredProjects = response.data
+          .filter(repo => pinnedRepos.includes(repo.name))
+          .map((repo: GitHubRepo): Project => ({
+            owner: repo.owner.login,
+            repo: repo.name,
+            link: repo.html_url,
+            description: repo.description,
+            image: repo.owner.avatar_url,
+            language: repo.language,
+            stars: repo.stargazers_count,
+            forks: repo.forks_count
+            // If your Project interface requires 'languageColor', you need to add it here too
+          }));
+  
+        setProjects(filteredProjects);
       } catch (error) {
         console.error("Error fetching GitHub projects:", error);
         setError("Failed to fetch projects. Please try again later.");
       }
     };
-
+  
     fetchData();
   }, []);
 
