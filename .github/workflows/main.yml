@@ -23,7 +23,7 @@ jobs:
         VITE_GITHUB_TOKEN: ${{ secrets.PERSONAL_WEBSITE }}
         
     - name: Deploy
-      uses: andre-moura/https://github.com/andre-moura/personal-website/tree/gh-pages
+      uses: andre-moura/personal-website/tree/gh-pages
       with:
         GITHUB_TOKEN: ${{ secrets.PERSONAL_WEBSITE }}
         BRANCH: gh-pages
