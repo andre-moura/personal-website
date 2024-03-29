@@ -766,15 +766,19 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   text-align: center;
 }
 
+
 .projects .card {
   background-color: #343a40;
   border-color: #343a40;
-  margin-bottom: 15px;
+  padding: 15px;
 }
 
 .projects .card-img-top {
-  height: 200px;
-  object-fit: cover;
+  width: 50%;
+}
+
+.image-box {
+  text-align: center;
 }
 
 .projects .card-title {

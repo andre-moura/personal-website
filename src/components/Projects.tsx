@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import GithubImage from '../assets/images/github-mark-white.svg';
 import axios from "axios";
 
 interface Project {
@@ -96,11 +97,13 @@ const Projects: React.FC = () => {
             key={`${project.owner}-${project.repo}`}
           >
             <div className="card bg-dark text-white mb-3">
-              <img
-                src={project.image}
+              <div className="image-box">
+                <img
+                src={GithubImage}
                 className="card-img-top"
                 alt={project.repo}
-              />
+                />
+              </div>
               <div className="card-body">
                 <h5 className="card-title">{project.repo}</h5>{" "}
                 {/* Nome do Repositório */}
