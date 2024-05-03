@@ -25,12 +25,12 @@
 }
 
 html, body {
-  height: 100vh;
+  min-height: 100vh;
   margin: 0;
 }
 
 section {
-  height: 100vh;
+  min-height: 100vh;
 }
 
 html {
@@ -101,7 +101,7 @@ p.danger {
 nav.navbar {
   padding: 18px 0;
   position: fixed;
-  width: 100%;
+  width: 100vw;
   top: 0;
   z-index: 9999;
   transition: 0.32s ease-in-out;
@@ -345,7 +345,6 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 .banner img {
   animation: updown 3s linear infinite;
-  margin-left: 25%;
 }
 
 @keyframes updown {
@@ -363,12 +362,24 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 .title-banner {
-  min-height: 130px;
+  min-height: 150px;
 }
 
 .txt-rotate>.wrap {
   border-right: 0.08em solid #666;
 }
+
+/* Add this CSS to your existing stylesheet or create a new one */
+@media (max-width: 767px) {
+  .header-img {
+    display: none;
+  }
+
+  .title-banner {
+    min-height: 300px;
+  }
+}
+
 
 /************ Skills Css ************/
 .skill {
@@ -647,84 +658,11 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 /************ Footer Css ************/
 .footer {
-  margin-top: 20px;
-  padding: 20px 0 0 0;
-  display: flex;
-  align-items: center;
+  padding: 20px 0;
   background-position: center center;
   background-size: cover;
   border-top: 1px solid rgba(255, 255, 255, 0.1);
-}
-
-.newsletter-bx {
-  background: #FFFFFF;
-  border-radius: 55px;
-  color: #121212;
-  padding: 85px 125px;
-  margin-bottom: 80px;
-  margin-top: -122px;
-}
-
-.newsletter-bx h3 {
-  font-weight: 700;
-  letter-spacing: 0.5px;
-  line-height: 1.2em;
-}
-
-.new-email-bx {
-  background: #fff;
-  padding: 5px;
-  border-radius: 20px;
-  position: relative;
-  z-index: 0;
-  display: flex;
-  align-items: center;
-}
-
-.new-email-bx::before {
-  content: "";
-  background: linear-gradient(90.21deg, #20BF55 -5.91%, #01BAEF 111.58%);
-  border-radius: 20px;
-  position: absolute;
-  z-index: -1;
-  top: -1px;
-  left: -1px;
-  bottom: -1px;
-  right: -1px;
-}
-
-.new-email-bx::after {
-  content: "";
-  background: #fff;
-  border-radius: 20px;
-  position: absolute;
-  z-index: -1;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-}
-
-.new-email-bx input {
-  width: 100%;
-  color: #121212;
-  font-weight: 500;
-  background: transparent;
-  border: 0;
-  padding: 0 15px;
-}
-
-.new-email-bx button {
-  background: linear-gradient(90.21deg, #20BF55 -5.91%, #01BAEF 111.58%);
-  padding: 20px 65px;
-  color: #fff;
-  font-weight: 500;
-  letter-spacing: 0.5px;
-  border-radius: 18px;
-}
-
-.footer img {
-  width: 26%;
+  margin-top: auto; /* Ensures the footer sticks to the bottom */
 }
 
 .footer p {
@@ -735,46 +673,43 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   margin-top: 20px;
 }
 
-.skills {
-  width: 50%;
+.social-icon img {
+  width: 26%;
 }
 
-.header-img {
-  width: 60%;
-}
 
 /* Project */
 .projects {
-  height: 90vh;
-  padding: 0px 50px 0px 50px;
   border-top: 1px solid #272b30;
+  min-height: 90vh;
+}
+
+.projects h2 {
+  text-align: center;
+  margin: 30px 0 30px 0;
 }
 
 .project-container {
   display: flex;
-  align-content: center;
-  align-items: center;
-  height: 90vh;
-  width: 100%;
-  justify-content: center;
   flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  min-height: 90vh;
 }
 
-.projects h2 {
-  margin-top: 15px;
-  margin-bottom: 15px;
-  text-align: center;
+.card-box {
+  min-width: 500px; /* Fixed width for the card */
+  min-width: 350px; /* Fixed width for the card */
 }
-
 
 .projects .card {
   background-color: #343a40;
   border-color: #343a40;
-  padding: 15px;
+  height: 100%; /* Ensure the card takes full height */
 }
 
 .projects .card-img-top {
-  width: 50%;
+  width: 70%;
 }
 
 .image-box {
@@ -788,7 +723,6 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 .projects .card-text {
   color: #adb5bd;
-  margin-bottom: 15px;
 }
 
 .projects .card-footer {

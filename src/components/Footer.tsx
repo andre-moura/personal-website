@@ -8,8 +8,8 @@ export const Footer = () => {
   return (
     <footer className="footer">
       <Container>
-        <Row className="align-items-center">
-          <Col size={12} sm={6}>
+        <Row className="align-items-center text-center">
+          <Col xs={12} sm={6}>
             <div className="logo">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="36" height="36">
                 <path
@@ -21,13 +21,13 @@ export const Footer = () => {
               &nbsp; Andre Moura
             </div>
           </Col>
-          <Col size={12} sm={6} className="text-center text-sm-end">
-              <div className="social-icon">
-                <a href="https://github.com/andre-moura" target="_blank" rel="noreferrer"><img src={GitHubIcon} alt="" /></a>
-                &nbsp;
-                <a href="https://www.linkedin.com/in/andre-moura-tech/" target="_blank" rel="noreferrer"><img src={LinkedInIcon} alt="" /></a>
-              </div>
-            <p>Copyright {currentYear}. All Rights Reserved</p>
+          <Col xs={12} sm={6} className="text-center text-sm-end mt-3 mt-sm-0">
+            <div className="social-icon">
+              <a href="https://github.com/andre-moura" target="_blank" rel="noreferrer"><img src={GitHubIcon} alt="" /></a>
+              &nbsp;
+              <a href="https://www.linkedin.com/in/andre-moura-tech/" target="_blank" rel="noreferrer"><img src={LinkedInIcon} alt="" /></a>
+            </div>
+            <p className="mt-3 mt-sm-0">Copyright {currentYear}. All Rights Reserved</p>
           </Col>
         </Row>
       </Container>

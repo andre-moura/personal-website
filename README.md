@@ -13,7 +13,12 @@ git clone https://github.com/andre-moura/personal-website.git
 
 Download the libraries and dependencies
 ```bash
-npm install
+$env:VITE_GITHUB_TOKEN = "VALUE"
+```
+
+Check if the value is right
+```bash
+$env:VITE_GITHUB_TOKEN
 ```
 
 Run the application in the development mode

@@ -32,7 +32,7 @@ const Projects: React.FC = () => {
   const [projects, setProjects] = useState<Project[]>([]);
   const [error, setError] = useState<string | null>(null);
   const apiKey: string = (import.meta.env.VITE_GITHUB_TOKEN as string);
-  
+
   const pinnedRepos = [
     "jwt",
     "pomodoro",
@@ -92,10 +92,7 @@ const Projects: React.FC = () => {
       <h2>Pinned Projects</h2>
       <div className="project-container">
         {projects.map((project) => (
-          <div
-            className="col-md-4 card-box"
-            key={`${project.owner}-${project.repo}`}
-          >
+          <div className="card-box" key={`${project.owner}-${project.repo}`}>
             <div className="card bg-dark text-white mb-3">
               <div className="image-box">
                 <img
