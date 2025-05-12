@@ -1,7 +1,7 @@
 "use client"
 import { motion } from "framer-motion"
 import { Card, CardContent } from "@/components/molecules/card"
-import { Github, Linkedin, Mail, MessageSquare } from "lucide-react"
+import { Github, Linkedin, MessageSquare } from "lucide-react"
 import Link from "next/link"
 
 export default function ContactSection() {

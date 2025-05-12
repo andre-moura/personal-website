@@ -1,6 +1,26 @@
 "use client"
 import { motion } from "framer-motion"
-import { Coffee } from "lucide-react"
+import { Coffee, Linkedin, Github, MessageSquare } from "lucide-react"
+import Link from "next/link"
+
+// Social media link data
+const socialLinks = [
+  {
+    href: "https://linkedin.com/in/andre-moura-tech/",
+    icon: <Linkedin size={18} />,
+    label: "LinkedIn"
+  },
+  {
+    href: "https://github.com/andre-moura",
+    icon: <Github size={18} />,
+    label: "GitHub"
+  },
+  {
+    href: "https://t.me/PragmaticThoughts",
+    icon: <MessageSquare size={18} />,
+    label: "Telegram"
+  }
+]
 
 export default function Footer() {
   return (
@@ -19,9 +39,28 @@ export default function Footer() {
             <span className="text-blue-500">Next.js</span>
           </motion.div>
 
-          <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.2 }} className="w-full">
-            <p className="text-sm text-muted-foreground py-3">
-              &copy; 2022 Andre. All rights reserved.
+          <motion.div 
+            initial={{ opacity: 0 }} 
+            animate={{ opacity: 1 }} 
+            transition={{ delay: 0.2 }} 
+            className="w-full flex flex-col sm:flex-row items-center gap-4 sm:gap-0 sm:justify-between py-3"
+          >
+            <div className="flex gap-3">
+              {socialLinks.map((link, index) => (
+                <Link 
+                  key={index}
+                  href={link.href} 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="flex items-center justify-center w-9 h-9 rounded-full bg-muted/30 text-muted-foreground hover:text-primary hover:bg-muted/50 transition-all duration-300 hover:scale-110"
+                  aria-label={link.label}
+                >
+                  {link.icon}
+                </Link>
+              ))}
+            </div>
+            <p className="text-sm text-muted-foreground">
+              &copy; {new Date().getFullYear()} Andre. All rights reserved.
             </p>
           </motion.div>
         </div>
