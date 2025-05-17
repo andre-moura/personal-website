@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   title: "Crafted by Andre Moura",
   description: "Software Engineer portfolio showcasing projects and experience",
   icons: {
-    icon: "/favicon.png",
+    icon: "/images/favicon.png",
   }
 }
 

@@ -3,6 +3,7 @@ import { Badge } from "@/components/atoms/badge"
 import { Button } from "@/components/atoms/button"
 import { Card, CardContent, CardFooter } from "@/components/molecules/card"
 import { ExternalLink, Github, Play } from "lucide-react"
+import { useState } from "react"
 
 interface ProjectCardProps {
   project: {
@@ -11,11 +12,12 @@ interface ProjectCardProps {
     tagline: string
     description: string
     problem: string
-    image: string
+    video?: string | null
+    image?: string
     stack: string[]
     category: string
     links: {
-      live?: string
+      live?: string | null
       github?: string
       case?: boolean
     }
@@ -23,14 +25,38 @@ interface ProjectCardProps {
 }
 
 export default function ProjectCard({ project }: ProjectCardProps) {
+  const [isHovering, setIsHovering] = useState(false)
+
   return (
     <Card className="overflow-hidden border border-border/50 bg-card/50 backdrop-blur-sm h-full flex flex-col">
-      <div className="relative overflow-hidden aspect-video">
-        <img
-          src={project.image || "/placeholder.svg"}
-          alt={project.title}
-          className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
-        />
+      <div
+        className="relative overflow-hidden aspect-video"
+        onMouseEnter={() => setIsHovering(true)}
+        onMouseLeave={() => setIsHovering(false)}
+      >
+        {project.video ? (
+          <video
+            src={project.video}
+            muted
+            loop
+            playsInline
+            className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
+            style={{
+              objectFit: "cover",
+              objectPosition: "center",
+              transform: "scale(1.31)"
+            }}
+            autoPlay={isHovering}
+            onMouseEnter={(e) => e.currentTarget.play()}
+            onMouseLeave={(e) => e.currentTarget.pause()}
+          />
+        ) : (
+          <img
+            src={project.image || "/images/placeholder.svg?height=400&width=600"}
+            alt={project.title}
+            className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
+          />
+        )}
       </div>
 
       <CardContent className="p-6 flex-grow">
@@ -66,14 +92,14 @@ export default function ProjectCard({ project }: ProjectCardProps) {
 
       <CardFooter className="p-6 pt-0 gap-2 flex-wrap">
         {project.links.live && (
-          <Button variant="outline" size="sm" className="gap-1">
+          <Button variant="outline" size="sm" className="gap-1" onClick={() => window.open(project.links.live!, "_blank")}>
             <ExternalLink className="h-4 w-4" />
             Live Demo
           </Button>
         )}
 
         {project.links.github && (
-          <Button variant="outline" size="sm" className="gap-1">
+          <Button variant="outline" size="sm" className="gap-1" onClick={() => window.open(project.links.github, "_blank")}>
             <Github className="h-4 w-4" />
             Code
           </Button>

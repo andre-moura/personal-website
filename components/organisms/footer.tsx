@@ -6,7 +6,7 @@ import Link from "next/link"
 // Social media link data
 const socialLinks = [
   {
-    href: "https://linkedin.com/in/andre-moura-tech/",
+    href: "https://linkedin.com/in/andre-moura-tech",
     icon: <Linkedin size={18} />,
     label: "LinkedIn"
   },

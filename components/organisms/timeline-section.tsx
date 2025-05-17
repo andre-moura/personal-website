@@ -7,7 +7,7 @@ const experiences = [
   {
     title: "Computer Science Degree",
     company: "Sao Paulo Tech School - SPTech",
-    logo: "/sptech.jpg",
+    logo: "/images/sptech.jpg",
     period: "Feb 2020 - Dec 2023",
     location: "Sao Paulo, Sao Paulo, Brazil",
     workType: "On-site",
@@ -39,7 +39,7 @@ const experiences = [
   {
     title: "Software Engineer Intern",
     company: "Deloitte",
-    logo: "/deloitte.jpg",
+    logo: "/images/deloitte.jpg",
     period: "Feb 2021 - Nov 2022 · 1 yr 10 mos",
     location: "Sao Paulo, Sao Paulo, Brazil",
     workType: "Remote",
@@ -57,7 +57,7 @@ const experiences = [
   {
     title: "Junior Software Engineer",
     company: "Deloitte",
-    logo: "/deloitte.jpg",
+    logo: "/images/deloitte.jpg",
     period: "Nov 2022 - Jul 2023 · 9 mos",
     location: "Sao Paulo, Sao Paulo, Brazil",
     workType: "Hybrid",
@@ -75,7 +75,7 @@ const experiences = [
   {
     title: "Mid-Level Software Engineer",
     company: "Advice Compliance Solutions",
-    logo: "/advice.jpg",
+    logo: "/images/advice.jpg",
     period: "Jul 2023 - May 2024 · 11 mos",
     location: "Sao Paulo, Sao Paulo, Brazil",
     workType: "Hybrid",
@@ -93,7 +93,7 @@ const experiences = [
   {
     title: "Mid-Level Software Engineer",
     company: "Advice Compliance Solutions",
-    logo: "/advice.jpg",
+    logo: "/images/advice.jpg",
     period: "Jun 2024 - Present · 1 yr",
     location: "Sao Paulo, Sao Paulo, Brazil",
     workType: "Hybrid",

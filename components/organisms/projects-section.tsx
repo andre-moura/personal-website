@@ -1,4 +1,4 @@
-"use client"
+"use client" 
 import { useState } from "react"
 import { motion, AnimatePresence } from "framer-motion"
 import { Button } from "@/components/atoms/button"
@@ -7,85 +7,71 @@ import ProjectCard from "@/components/molecules/project-card"
 const projects = [
   {
     id: 1,
-    title: "E-commerce Platform",
-    tagline: "A modern shopping experience",
+    title: "Ghibli Dreamscape",
+    tagline: "Immersive Studio Ghibli Experience",
     description:
-      "Built a full-featured e-commerce platform with real-time inventory, payment processing, and admin dashboard.",
-    problem: "The client needed a scalable solution that could handle high traffic and complex product configurations.",
-    image: "/placeholder.svg?height=400&width=600",
-    stack: ["Next.js", "TypeScript", "Tailwind CSS", "Stripe"],
-    category: "Client Work",
+      "An interactive web application that showcases Studio Ghibli films and characters in a visually appealing interface.",
+    problem: "Creating an engaging and intuitive platform for fans to explore the magical world of Studio Ghibli films.",
+    video: "/videos/Ghibli.mp4",
+    stack: ["CSS", "Tailwind", "HTML", "JavaScript", "Typescript", "React", "Node", "API Integration"],
+    category: "Web Applications",
     links: {
-      live: "https://example.com",
-      github: "https://github.com",
-      case: true,
+      live: "https://ghiblidreamscape.netlify.app/",
+      github: "https://github.com/andre-moura/ghibli",
+      case: false,
     },
   },
   {
     id: 2,
-    title: "Task Management App",
-    tagline: "Productivity reimagined",
+    title: "Memory Match - Rick and Morty",
+    tagline: "Interactive Card Matching Game",
     description:
-      "Designed and developed a collaborative task management application with real-time updates and intuitive UI.",
-    problem: "Teams needed a better way to track progress and collaborate on projects without context switching.",
-    image: "/placeholder.svg?height=400&width=600",
-    stack: ["React", "Firebase", "Styled Components"],
-    category: "Open Source",
+      "A fun and challenging memory card game featuring characters from the popular Rick and Morty series.",
+    problem: "Developing an entertaining game with smooth animations and tracking user performance.",
+    video: "/videos/Memory Match.mp4",
+    stack: ["CSS", "Tailwind", "HTML", "JavaScript", "Typescript", "React", "Node"],
+    category: "Games",
     links: {
-      live: "https://example.com",
-      github: "https://github.com",
+      live: "https://memorymatch-rickandmorty.netlify.app/",
+      github: "https://github.com/andre-moura/memory-match",
       case: false,
     },
   },
   {
     id: 3,
-    title: "Interactive Data Visualization",
-    tagline: "Making sense of complex data",
+    title: "Pomodoro Helper",
+    tagline: "Productivity Timer Application",
     description:
-      "Created an interactive dashboard for visualizing and analyzing large datasets with customizable views.",
-    problem: "The challenge was presenting complex data in an accessible way that enables quick insights.",
-    image: "/placeholder.svg?height=400&width=600",
-    stack: ["D3.js", "React", "Node.js", "Express"],
-    category: "Client Work",
+      "A customizable Pomodoro timer application to help users manage their work sessions and breaks effectively.",
+    problem: "Users needed a simple yet effective tool to implement the Pomodoro technique for improved productivity.",
+    video: "/videos/Pomodoro.mp4",
+    stack: ["CSS", "Tailwind", "HTML", "JavaScript", "Typescript", "React", "Node"],
+    category: "Web Applications",
     links: {
-      live: "https://example.com",
-      github: "https://github.com",
-      case: true,
+      live: "https://pomohelper.netlify.app/",
+      github: "https://github.com/andre-moura/pomodoro",
+      case: false,
     },
   },
   {
     id: 4,
-    title: "UI Component Library",
-    tagline: "Reusable, accessible components",
-    description: "Developed a comprehensive UI component library with a focus on accessibility and customization.",
-    problem: "Needed to standardize UI elements across multiple projects while maintaining flexibility.",
-    image: "/placeholder.svg?height=400&width=600",
-    stack: ["React", "TypeScript", "Storybook", "Jest"],
-    category: "Open Source",
+    title: "JWT Authentication System",
+    tagline: "Secure Authentication Implementation",
+    description: "A secure JSON Web Token (JWT) authentication system built with Python.",
+    problem: "Implementing secure user authentication while maintaining simplicity and performance.",
+    video: null,
+    image: "/images/jwt.jpg",
+    stack: ["Python", "JWT", "Security", "API"],
+    category: "Backend",
     links: {
-      live: "https://example.com",
-      github: "https://github.com",
+      live: null,
+      github: "https://github.com/andre-moura/jwt",
       case: false,
     },
-  },
-  {
-    id: 5,
-    title: "Animation Experiments",
-    tagline: "Pushing the boundaries of web animations",
-    description: "A collection of experiments exploring advanced animation techniques and interactions on the web.",
-    problem: "Wanted to showcase what's possible with modern web technologies while maintaining performance.",
-    image: "/placeholder.svg?height=400&width=600",
-    stack: ["JavaScript", "GSAP", "Three.js", "Canvas API"],
-    category: "UI Experiments",
-    links: {
-      live: "https://example.com",
-      github: "https://github.com",
-      case: false,
-    },
-  },
+  }
 ]
 
-const categories = ["All", "Open Source", "Client Work", "UI Experiments"]
+const categories = ["All", "Web Applications", "Games", "Backend"]
 
 export default function ProjectsSection() {
   const [activeCategory, setActiveCategory] = useState("All")

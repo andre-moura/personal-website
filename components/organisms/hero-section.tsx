@@ -43,7 +43,7 @@ function ProfileImage() {
         <div className="absolute inset-0 shadow-inner"></div>
 
         <img
-          src="/me.png"
+          src="/images/me.png"
           alt="Your Name"
           className="w-full h-full object-cover"
         />
