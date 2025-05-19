@@ -44,7 +44,7 @@ const projects = [
     description:
       "A customizable Pomodoro timer application to help users manage their work sessions and breaks effectively.",
     problem: "Users needed a simple yet effective tool to implement the Pomodoro technique for improved productivity.",
-    video: "/videos/Pomodoro.mp4",
+    video: "/videos/Pomo Helper.mp4",
     stack: ["CSS", "Tailwind", "HTML", "JavaScript", "Typescript", "React", "Node"],
     category: "Web Applications",
     links: {
