@@ -4,7 +4,7 @@
 My goal in creating this website was to put my knowledge into practice. Open the [URL](https://andre-moura.netlify.app) to view the published version.
 
 ### 1. 🏠 Home
-![Home](https://raw.githubusercontent.com/andre-moura/images/refs/heads/main/personal-website/index.png)
+![Home](https://raw.githubusercontent.com/andre-moura/images/refs/heads/main/personal-website/index.png?raw=true)
 
 ---
 
